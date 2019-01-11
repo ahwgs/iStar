@@ -1,0 +1,2 @@
+# iStar
+wordpress theme iStar
