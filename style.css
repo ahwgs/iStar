@@ -4,7 +4,7 @@ Theme URI: https://www.ahwgs.cn
 Description: 简洁、单栏
 Author: w候人兮猗
 Author URI:https://www.ahwgs.cn
-Version: 1.0.0
+Version: 1.0.1
 */
 
 a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,figure,form,h1,h2,h3,h4,h5,h6,html,iframe,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var {
@@ -56,9 +56,7 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
     display: block
 }
 
-ol,ul {
-    list-style: none
-}
+
 
 table {
     width: 100%;
@@ -374,6 +372,11 @@ textarea::-webkit-input-placeholder {
   margin-top:30px;
 } 
 
+#main.single .entry-content ul {
+      padding-left: 3em;
+    list-style: aliceblue!important;
+} 
+
 #main.single .entry-content h2{
     border-bottom: 1px dashed #eee;
     padding: 10px 0;
@@ -390,14 +393,14 @@ textarea::-webkit-input-placeholder {
     content: '##';
     color: #695a5a!important;
     margin-right: 5px;
-	padding-left:10px
+	
 }
 
 #main.single .entry-content h4:before{
     content: '###';
     color: #695a5a!important;
     margin-right: 5px;
-	padding-left:10px
+
 }
 
 #main.single .entry-content a{
@@ -482,6 +485,9 @@ textarea::-webkit-input-placeholder {
 .archives-title{
   margin: 15px 0;
 }
+.archives-ul{
+	list-style:none;
+}
 .archives-ul li{
   margin: 15px 0;
   font-size: 16px;
@@ -503,6 +509,7 @@ textarea::-webkit-input-placeholder {
     display: inline-block;
     clear: both;
     padding-top: 10px;
+	list-style:none;
 }
 .links-bar a {
     position: relative;

@@ -8,5 +8,6 @@
 		<div class="summary" itemprop="description">
 			<?php post_excerpt(); ?>
 		</div>
+		
 	</section>
 </article>
