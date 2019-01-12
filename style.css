@@ -141,7 +141,7 @@ pre code {
     overflow: auto;
     border: 0;
     margin: 0;
-    padding: 1.3em;
+    padding: 10px;
     color: #313131;
     background-color: #f7f7f7;
 }
@@ -364,6 +364,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 10px;
+	border:none;
 }
 #main.single .post .meta{
     color: #657786
@@ -373,16 +374,32 @@ textarea::-webkit-input-placeholder {
   margin-top:30px;
 } 
 
+#main.single .entry-content h2{
+    border-bottom: 1px dashed #eee;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
 #main.single .entry-content h2:before{
-      content: '#';
+    content: '#';
     color: #695a5a!important;
     margin-right: 5px;
 }
+
 #main.single .entry-content h3:before{
     content: '##';
     color: #695a5a!important;
     margin-right: 5px;
+	padding-left:10px
 }
+
+#main.single .entry-content h4:before{
+    content: '###';
+    color: #695a5a!important;
+    margin-right: 5px;
+	padding-left:10px
+}
+
 #main.single .entry-content a{
   text-decoration: underline;
 }
