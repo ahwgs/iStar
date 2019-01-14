@@ -22,16 +22,16 @@
     <header class="header" id="header">
         <div id="header-wrap">
             <h2 id="logo" class="fl">
-                <a href="<?php echo home_url(); ?>" >w候人兮猗</a>
+                <a href="<?php echo home_url(); ?>" ><?php bloginfo('name'); ?></a>
             </h2>
             <nav id="nav" class=" fr clear">
                 <?php wp_nav_menu(array('theme_location' => 'top','menu_class'=>'nav-menu top-menu fl','container'=>'ul')); ?>
             </nav>
 
             <nav id="mobie-nav">
-                <button class="nav-btn">
+                <div class="nav-btn">
                     <?php wp_nav_menu(array('theme_location' => 'top','menu_class'=>'nav-menu top-menu fl','container'=>'ul')); ?>
-                </button>
+                </div>
             </nav>
         </div>
     </header>
