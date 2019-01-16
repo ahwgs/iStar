@@ -29,7 +29,8 @@
             </nav>
 
             <nav id="mobie-nav">
-                <div class="nav-btn">
+				<div class="nav-btn">Menu</div>
+                <div class="nav-btn-active">
                     <?php wp_nav_menu(array('theme_location' => 'top','menu_class'=>'nav-menu top-menu fl','container'=>'ul')); ?>
                 </div>
             </nav>

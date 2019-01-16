@@ -266,8 +266,41 @@ textarea::-webkit-input-placeholder {
     overflow: hidden;
 }
 #header #mobie-nav{
-  display: none;
+	float:right;
+    font-size:16px;
+	display:none
 }
+#header #mobie-nav .nav-btn-active{
+	display:none;
+}
+#header #mobie-nav:hover .nav-btn-active{
+	display: flex;
+    flex-direction: column;
+	    position: relative;
+}
+#header .nav-btn-active .nav-menu{
+	display: flex;
+    flex-direction: column;
+    width: 80px;
+    list-style: none;
+    background-color: #fff;
+    /* border: 1px solid; */
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    right: 0px;
+	    padding-left: 8px;
+}
+
+#header .nav-btn-active .nav-menu li{
+	    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    font-size: 14px;
+}
+
 #header #nav>ul{
     list-style: none;
 }
@@ -370,6 +403,8 @@ textarea::-webkit-input-placeholder {
 #main.single .entry-content {
     border-top: none;
   margin-top:30px;
+      overflow: visible;
+    word-break: break-all;
 } 
 
 #main.single .entry-content ul {
@@ -380,7 +415,7 @@ textarea::-webkit-input-placeholder {
 #main.single .entry-content h2{
     border-bottom: 1px dashed #eee;
     padding: 10px 0;
-    margin-bottom: 10px;
+	margin:10px 0 10px 0px 
 }
 
 #main.single .entry-content h2:before{
@@ -389,11 +424,19 @@ textarea::-webkit-input-placeholder {
     margin-right: 5px;
 }
 
+#main.single .entry-content h3{
+	margin:10px 0 
+}
+
 #main.single .entry-content h3:before{
     content: '##';
     color: #695a5a!important;
     margin-right: 5px;
-	
+
+}
+
+#main.single .entry-content h4{
+	margin:10px 0 
 }
 
 #main.single .entry-content h4:before{
@@ -606,6 +649,7 @@ textarea::-webkit-input-placeholder {
   }
   #header #mobie-nav{
     /*display: block;*/
+	display:block
   }
 }
 @media screen and (max-width: 420px) {
